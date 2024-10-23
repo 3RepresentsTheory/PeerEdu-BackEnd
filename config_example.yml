@@ -1,0 +1,1 @@
+dsn: "peerEdu:PEEREDU@tcp(127.0.0.1:3306)/peerEdu?charset=utf8mb4&parseTime=True&loc=Local"  #数据库源

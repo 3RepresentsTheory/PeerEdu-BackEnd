@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    environment:
+      # 密码可改
+      MYSQL_ROOT_PASSWORD: peeredu1120211224
+      # 部署运行环境下请只允许本地访问数据库
+      # MYSQL_ROOT_HOST: 127.0.0.1
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
+
+volumes:
+  db_data:
