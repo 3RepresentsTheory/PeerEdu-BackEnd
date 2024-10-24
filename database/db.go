@@ -61,6 +61,7 @@ type User struct {
 	Password string `gorm:"not null" json:"password"`        //密码
 	Role     uint   `gorm:"default:0" json:"role"`           //用户类型
 	Avatar   string `json:"avatar"`                          //头像URL
+	Email    string `gorm:"not null" json:"email"`           //邮箱
 }
 
 // 帖子

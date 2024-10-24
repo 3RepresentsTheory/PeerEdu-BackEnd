@@ -1,1 +1,5 @@
+port: 12345
 dsn: "peerEdu:PEEREDU@tcp(127.0.0.1:3306)/peerEdu?charset=utf8mb4&parseTime=True&loc=Local"  #数据库源
+release_mode: false
+key: "PEEREDUCHNYSSRL" #加密密钥
+login_expire: 2073600 #登录有效期 单位秒

@@ -7,7 +7,11 @@ import (
 )
 
 var Config = struct {
-	Dsn string
+	Port        string
+	Dsn         string
+	ReleaseMode bool `yaml:"release_mode"`
+	Key         string
+	LoginExpire int64 `yaml:"login_expire"`
 }{}
 
 func Init() {
